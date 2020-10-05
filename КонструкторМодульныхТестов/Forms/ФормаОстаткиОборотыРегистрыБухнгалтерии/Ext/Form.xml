@@ -142,14 +142,6 @@
 						<ExtendedTooltip name="ОтборРезультатаУправлениеПоискомРасширеннаяПодсказка" id="23"/>
 					</SearchControlAddition>
 					<ChildItems>
-						<CheckBoxField name="ОтборРезультатаИспользовать" id="24">
-							<DataPath>ОтборРезультата.Использовать</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ОтборРезультатаИспользоватьКонтекстноеМеню" id="25"/>
-							<ExtendedTooltip name="ОтборРезультатаИспользоватьРасширеннаяПодсказка" id="26"/>
-						</CheckBoxField>
 						<InputField name="ОтборРезультатаСчет" id="72">
 							<DataPath>ОтборРезультата.Счет</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -209,18 +201,76 @@
 							<ContextMenu name="ОтборРезультатаВалютаКонтекстноеМеню" id="95"/>
 							<ExtendedTooltip name="ОтборРезультатаВалютаРасширеннаяПодсказка" id="96"/>
 						</InputField>
-						<InputField name="ОтборРезультатаСуммаОстаток" id="86">
-							<DataPath>ОтборРезультата.СуммаОстаток</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаСуммаОстатокКонтекстноеМеню" id="87"/>
-							<ExtendedTooltip name="ОтборРезультатаСуммаОстатокРасширеннаяПодсказка" id="88"/>
-						</InputField>
-						<InputField name="ОтборРезультатаВалютнаяСуммаОстаток" id="89">
-							<DataPath>ОтборРезультата.ВалютнаяСуммаОстаток</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаВалютнаяСуммаОстатокКонтекстноеМеню" id="90"/>
-							<ExtendedTooltip name="ОтборРезультатаВалютнаяСуммаОстатокРасширеннаяПодсказка" id="91"/>
-						</InputField>
+						<ColumnGroup name="ОтборРезультатаГруппаСумма" id="152">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата группа сумма</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата группа сумма</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОтборРезультатаГруппаСуммаРасширеннаяПодсказка" id="153"/>
+							<ChildItems>
+								<InputField name="ОтборРезультатаСуммаОстаток" id="86">
+									<DataPath>ОтборРезультата.СуммаОстаток</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаСуммаОстатокКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ОтборРезультатаСуммаОстатокРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ОтборРезультатаСуммаОстатокДт" id="154">
+									<DataPath>ОтборРезультата.СуммаОстатокДт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаСуммаОстатокДтКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ОтборРезультатаСуммаОстатокДтРасширеннаяПодсказка" id="156"/>
+								</InputField>
+								<InputField name="ОтборРезультатаСуммаОстатокКт" id="157">
+									<DataPath>ОтборРезультата.СуммаОстатокКт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаСуммаОстатокКтКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ОтборРезультатаСуммаОстатокКтРасширеннаяПодсказка" id="159"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ОтборРезультатаГруппаСуммаВалютная" id="160">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата группа сумма валютная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата группа сумма валютная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОтборРезультатаГруппаСуммаВалютнаяРасширеннаяПодсказка" id="161"/>
+							<ChildItems>
+								<InputField name="ОтборРезультатаВалютнаяСуммаОстаток" id="89">
+									<DataPath>ОтборРезультата.ВалютнаяСуммаОстаток</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаВалютнаяСуммаОстатокКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ОтборРезультатаВалютнаяСуммаОстатокРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ОтборРезультатаВалютнаяСуммаОстатокДт" id="162">
+									<DataPath>ОтборРезультата.ВалютнаяСуммаОстатокДт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаВалютнаяСуммаОстатокДтКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ОтборРезультатаВалютнаяСуммаОстатокДтРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ОтборРезультатаВалютнаяСуммаОстатокКт" id="165">
+									<DataPath>ОтборРезультата.ВалютнаяСуммаОстатокКт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаВалютнаяСуммаОстатокКтКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ОтборРезультатаВалютнаяСуммаОстатокКтРасширеннаяПодсказка" id="167"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
 					</ChildItems>
 				</Table>
 			</ChildItems>
@@ -276,55 +326,135 @@
 						<ExtendedTooltip name="ОтборРезультатаОборотыУправлениеПоискомРасширеннаяПодсказка" id="109"/>
 					</SearchControlAddition>
 					<ChildItems>
-						<CheckBoxField name="ОтборРезультатаОборотыИспользовать" id="110">
-							<DataPath>ОтборРезультатаОбороты.Использовать</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ОтборРезультатаОборотыИспользоватьКонтекстноеМеню" id="111"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыИспользоватьРасширеннаяПодсказка" id="112"/>
-						</CheckBoxField>
 						<InputField name="ОтборРезультатаОборотыСчет" id="113">
 							<DataPath>ОтборРезультатаОбороты.Счет</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОтборРезультатаОборотыСчетКонтекстноеМеню" id="114"/>
 							<ExtendedTooltip name="ОтборРезультатаОборотыСчетРасширеннаяПодсказка" id="115"/>
 						</InputField>
-						<InputField name="ОтборРезультатаОборотыСубконто1" id="116">
-							<DataPath>ОтборРезультатаОбороты.Субконто1</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаОборотыСубконто1КонтекстноеМеню" id="117"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыСубконто1РасширеннаяПодсказка" id="118"/>
-						</InputField>
-						<InputField name="ОтборРезультатаОборотыСубконто2" id="119">
-							<DataPath>ОтборРезультатаОбороты.Субконто2</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаОборотыСубконто2КонтекстноеМеню" id="120"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыСубконто2РасширеннаяПодсказка" id="121"/>
-						</InputField>
-						<InputField name="ОтборРезультатаОборотыСубконто3" id="122">
-							<DataPath>ОтборРезультатаОбороты.Субконто3</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаОборотыСубконто3КонтекстноеМеню" id="123"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыСубконто3РасширеннаяПодсказка" id="124"/>
-						</InputField>
+						<ColumnGroup name="ОтборРезультатаОборотыГруппаСубконто" id="134">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа субконто</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа субконто</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОтборРезультатаОборотыГруппаСубконтоРасширеннаяПодсказка" id="135"/>
+							<ChildItems>
+								<InputField name="ОтборРезультатаОборотыСубконто1" id="116">
+									<DataPath>ОтборРезультатаОбороты.Субконто1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TypeLink>
+										<xr:DataPath>Items.ОтборРезультатаОбороты.CurrentData.Счет</xr:DataPath>
+										<xr:LinkItem>1</xr:LinkItem>
+									</TypeLink>
+									<ContextMenu name="ОтборРезультатаОборотыСубконто1КонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСубконто1РасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыСубконто2" id="119">
+									<DataPath>ОтборРезультатаОбороты.Субконто2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TypeLink>
+										<xr:DataPath>Items.ОтборРезультатаОбороты.CurrentData.Счет</xr:DataPath>
+										<xr:LinkItem>2</xr:LinkItem>
+									</TypeLink>
+									<ContextMenu name="ОтборРезультатаОборотыСубконто2КонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСубконто2РасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыСубконто3" id="122">
+									<DataPath>ОтборРезультатаОбороты.Субконто3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TypeLink>
+										<xr:DataPath>Items.ОтборРезультатаОбороты.CurrentData.Счет</xr:DataPath>
+										<xr:LinkItem>3</xr:LinkItem>
+									</TypeLink>
+									<ContextMenu name="ОтборРезультатаОборотыСубконто3КонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСубконто3РасширеннаяПодсказка" id="124"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
 						<InputField name="ОтборРезультатаОборотыВалюта" id="125">
 							<DataPath>ОтборРезультатаОбороты.Валюта</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОтборРезультатаОборотыВалютаКонтекстноеМеню" id="126"/>
 							<ExtendedTooltip name="ОтборРезультатаОборотыВалютаРасширеннаяПодсказка" id="127"/>
 						</InputField>
-						<InputField name="ОтборРезультатаОборотыСуммаОборот" id="128">
-							<DataPath>ОтборРезультатаОбороты.СуммаОборот</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаОборотыСуммаОборотКонтекстноеМеню" id="129"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыСуммаОборотРасширеннаяПодсказка" id="130"/>
-						</InputField>
-						<InputField name="ОтборРезультатаОборотыВалютнаяСуммаОборот" id="131">
-							<DataPath>ОтборРезультатаОбороты.ВалютнаяСуммаОборот</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ОтборРезультатаОборотыВалютнаяСуммаОборотКонтекстноеМеню" id="132"/>
-							<ExtendedTooltip name="ОтборРезультатаОборотыВалютнаяСуммаОборотРасширеннаяПодсказка" id="133"/>
-						</InputField>
+						<ColumnGroup name="ОтборРезультатаОборотыГруппаСуммы" id="148">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа суммы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа суммы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОтборРезультатаОборотыГруппаСуммыРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<InputField name="ОтборРезультатаОборотыСуммаОборот" id="128">
+									<DataPath>ОтборРезультатаОбороты.СуммаОборот</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыСуммаОборотКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСуммаОборотРасширеннаяПодсказка" id="130"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыСуммаОборотКт" id="139">
+									<DataPath>ОтборРезультатаОбороты.СуммаОборотКт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыСуммаОборотКтКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСуммаОборотКтРасширеннаяПодсказка" id="141"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыСуммаОборотДт" id="136">
+									<DataPath>ОтборРезультатаОбороты.СуммаОборотДт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыСуммаОборотДтКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыСуммаОборотДтРасширеннаяПодсказка" id="138"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ОтборРезультатаОборотыГруппаВалютныеСуммы" id="150">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа валютные суммы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор результата обороты группа валютные суммы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОтборРезультатаОборотыГруппаВалютныеСуммыРасширеннаяПодсказка" id="151"/>
+							<ChildItems>
+								<InputField name="ОтборРезультатаОборотыВалютнаяСуммаОборот" id="131">
+									<DataPath>ОтборРезультатаОбороты.ВалютнаяСуммаОборот</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыВалютнаяСуммаОборотКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыВалютнаяСуммаОборотРасширеннаяПодсказка" id="133"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыВалютнаяСуммаОборотДт" id="142">
+									<DataPath>ОтборРезультатаОбороты.ВалютнаяСуммаОборотДт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыВалютнаяСуммаОборотДтКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыВалютнаяСуммаОборотДтРасширеннаяПодсказка" id="144"/>
+								</InputField>
+								<InputField name="ОтборРезультатаОборотыВалютнаяСуммаОборотКт" id="145">
+									<DataPath>ОтборРезультатаОбороты.ВалютнаяСуммаОборотКт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборРезультатаОборотыВалютнаяСуммаОборотКтКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ОтборРезультатаОборотыВалютнаяСуммаОборотКтРасширеннаяПодсказка" id="147"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
 					</ChildItems>
 				</Table>
 			</ChildItems>
@@ -373,17 +503,6 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Использовать" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Использовать</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
 				<Column name="Счет" id="5">
 					<Title>
 						<v8:item>
@@ -471,6 +590,70 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
+				<Column name="СуммаОстатокДт" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма остаток Дт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОстатокКт" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма остаток Кт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВалютнаяСуммаОстатокДт" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валютная сумма остаток Дт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВалютнаяСуммаОстатокКт" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валютная сумма остаток Кт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="АдресХранилища" id="6">
@@ -530,17 +713,6 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Использовать" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Использовать</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
 				<Column name="Счет" id="5">
 					<Title>
 						<v8:item>
@@ -617,6 +789,70 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Валютная сумма оборот</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОборотДт" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма оборот Дт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОборотКт" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма оборот Кт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВалютнаяСуммаОборотДт" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валютная сумма оборот Дт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВалютнаяСуммаОборотКт" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валютная сумма оборот Кт</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
