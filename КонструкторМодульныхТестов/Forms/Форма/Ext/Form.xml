@@ -183,7 +183,6 @@
 								</InputField>
 								<InputField name="ДеревоЩагиСценарияИдентификаторТеста" id="237">
 									<DataPath>ДеревоЩагиСценария.ИдентификаторТеста</DataPath>
-									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДеревоЩагиСценарияИдентификаторТестаКонтекстноеМеню" id="238"/>
 									<ExtendedTooltip name="ДеревоЩагиСценарияИдентификаторТестаРасширеннаяПодсказка" id="239"/>
