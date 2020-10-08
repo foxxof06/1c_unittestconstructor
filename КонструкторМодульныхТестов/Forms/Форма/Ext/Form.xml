@@ -406,135 +406,305 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОтладкаРасширеннаяПодсказка" id="138"/>
 					<ChildItems>
-						<Table name="ШагиСценария" id="245">
-							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>ШагиСценария</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ШагиСценарияКонтекстноеМеню" id="246"/>
-							<AutoCommandBar name="ШагиСценарияКоманднаяПанель" id="247"/>
-							<ExtendedTooltip name="ШагиСценарияРасширеннаяПодсказка" id="248"/>
-							<SearchStringAddition name="ШагиСценарияСтрокаПоиска" id="249">
-								<AdditionSource>
-									<Item>ШагиСценария</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ШагиСценарияСтрокаПоискаКонтекстноеМеню" id="250"/>
-								<ExtendedTooltip name="ШагиСценарияСтрокаПоискаРасширеннаяПодсказка" id="251"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ШагиСценарияСостояниеПросмотра" id="252">
-								<AdditionSource>
-									<Item>ШагиСценария</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ШагиСценарияСостояниеПросмотраКонтекстноеМеню" id="253"/>
-								<ExtendedTooltip name="ШагиСценарияСостояниеПросмотраРасширеннаяПодсказка" id="254"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ШагиСценарияУправлениеПоиском" id="255">
-								<AdditionSource>
-									<Item>ШагиСценария</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ШагиСценарияУправлениеПоискомКонтекстноеМеню" id="256"/>
-								<ExtendedTooltip name="ШагиСценарияУправлениеПоискомРасширеннаяПодсказка" id="257"/>
-							</SearchControlAddition>
+						<Pages name="Группа3" id="330">
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
 							<ChildItems>
-								<InputField name="ШагиСценарияКоманда" id="258">
-									<DataPath>ШагиСценария.Команда</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияКомандаКонтекстноеМеню" id="259"/>
-									<ExtendedTooltip name="ШагиСценарияКомандаРасширеннаяПодсказка" id="260"/>
-								</InputField>
-								<InputField name="ШагиСценарияКонтрольноеЗначение" id="261">
-									<DataPath>ШагиСценария.КонтрольноеЗначение</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияКонтрольноеЗначениеКонтекстноеМеню" id="262"/>
-									<ExtendedTooltip name="ШагиСценарияКонтрольноеЗначениеРасширеннаяПодсказка" id="263"/>
-								</InputField>
-								<InputField name="ШагиСценарияВидСравнения" id="264">
-									<DataPath>ШагиСценария.ВидСравнения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияВидСравненияКонтекстноеМеню" id="265"/>
-									<ExtendedTooltip name="ШагиСценарияВидСравненияРасширеннаяПодсказка" id="266"/>
-								</InputField>
-								<InputField name="ШагиСценарияТипУзла" id="267">
-									<DataPath>ШагиСценария.ТипУзла</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияТипУзлаКонтекстноеМеню" id="268"/>
-									<ExtendedTooltip name="ШагиСценарияТипУзлаРасширеннаяПодсказка" id="269"/>
-								</InputField>
-								<InputField name="ШагиСценарияИдентификаторКоманды" id="270">
-									<DataPath>ШагиСценария.ИдентификаторКоманды</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияИдентификаторКомандыКонтекстноеМеню" id="271"/>
-									<ExtendedTooltip name="ШагиСценарияИдентификаторКомандыРасширеннаяПодсказка" id="272"/>
-								</InputField>
-								<InputField name="ШагиСценарияПараметрыХранилище" id="273">
-									<DataPath>ШагиСценария.ПараметрыХранилище</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияПараметрыХранилищеКонтекстноеМеню" id="274"/>
-									<ExtendedTooltip name="ШагиСценарияПараметрыХранилищеРасширеннаяПодсказка" id="275"/>
-								</InputField>
-								<InputField name="ШагиСценарияОграничениеПоТипу" id="276">
-									<DataPath>ШагиСценария.ОграничениеПоТипу</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияОграничениеПоТипуКонтекстноеМеню" id="277"/>
-									<ExtendedTooltip name="ШагиСценарияОграничениеПоТипуРасширеннаяПодсказка" id="278"/>
-								</InputField>
-								<InputField name="ШагиСценарияИд" id="279">
-									<DataPath>ШагиСценария.Ид</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияИдКонтекстноеМеню" id="280"/>
-									<ExtendedTooltip name="ШагиСценарияИдРасширеннаяПодсказка" id="281"/>
-								</InputField>
-								<InputField name="ШагиСценарияИдРодителя" id="282">
-									<DataPath>ШагиСценария.ИдРодителя</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияИдРодителяКонтекстноеМеню" id="283"/>
-									<ExtendedTooltip name="ШагиСценарияИдРодителяРасширеннаяПодсказка" id="284"/>
-								</InputField>
-								<InputField name="ШагиСценарияОписаниеТиповОбъекта" id="285">
-									<DataPath>ШагиСценария.ОписаниеТиповОбъекта</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияОписаниеТиповОбъектаКонтекстноеМеню" id="286"/>
-									<ExtendedTooltip name="ШагиСценарияОписаниеТиповОбъектаРасширеннаяПодсказка" id="287"/>
-								</InputField>
-								<InputField name="ШагиСценарияОбъектКоманды" id="288">
-									<DataPath>ШагиСценария.ОбъектКоманды</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияОбъектКомандыКонтекстноеМеню" id="289"/>
-									<ExtendedTooltip name="ШагиСценарияОбъектКомандыРасширеннаяПодсказка" id="290"/>
-								</InputField>
-								<InputField name="ШагиСценарияТипОбъекта" id="291">
-									<DataPath>ШагиСценария.ТипОбъекта</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияТипОбъектаКонтекстноеМеню" id="292"/>
-									<ExtendedTooltip name="ШагиСценарияТипОбъектаРасширеннаяПодсказка" id="293"/>
-								</InputField>
-								<InputField name="ШагиСценарияИмяПеременной" id="294">
-									<DataPath>ШагиСценария.ИмяПеременной</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияИмяПеременнойКонтекстноеМеню" id="295"/>
-									<ExtendedTooltip name="ШагиСценарияИмяПеременнойРасширеннаяПодсказка" id="296"/>
-								</InputField>
-								<InputField name="ШагиСценарияИдентификаторТеста" id="297">
-									<DataPath>ШагиСценария.ИдентификаторТеста</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ШагиСценарияИдентификаторТестаКонтекстноеМеню" id="298"/>
-									<ExtendedTooltip name="ШагиСценарияИдентификаторТестаРасширеннаяПодсказка" id="299"/>
-								</InputField>
+								<Page name="Группа6" id="332">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаги сценария</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="333"/>
+									<ChildItems>
+										<Table name="ШагиСценария" id="245">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ШагиСценария</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ШагиСценарияКонтекстноеМеню" id="246"/>
+											<AutoCommandBar name="ШагиСценарияКоманднаяПанель" id="247"/>
+											<ExtendedTooltip name="ШагиСценарияРасширеннаяПодсказка" id="248"/>
+											<SearchStringAddition name="ШагиСценарияСтрокаПоиска" id="249">
+												<AdditionSource>
+													<Item>ШагиСценария</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ШагиСценарияСтрокаПоискаКонтекстноеМеню" id="250"/>
+												<ExtendedTooltip name="ШагиСценарияСтрокаПоискаРасширеннаяПодсказка" id="251"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ШагиСценарияСостояниеПросмотра" id="252">
+												<AdditionSource>
+													<Item>ШагиСценария</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ШагиСценарияСостояниеПросмотраКонтекстноеМеню" id="253"/>
+												<ExtendedTooltip name="ШагиСценарияСостояниеПросмотраРасширеннаяПодсказка" id="254"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ШагиСценарияУправлениеПоиском" id="255">
+												<AdditionSource>
+													<Item>ШагиСценария</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ШагиСценарияУправлениеПоискомКонтекстноеМеню" id="256"/>
+												<ExtendedTooltip name="ШагиСценарияУправлениеПоискомРасширеннаяПодсказка" id="257"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ШагиСценарияКоманда" id="258">
+													<DataPath>ШагиСценария.Команда</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияКомандаКонтекстноеМеню" id="259"/>
+													<ExtendedTooltip name="ШагиСценарияКомандаРасширеннаяПодсказка" id="260"/>
+												</InputField>
+												<InputField name="ШагиСценарияКонтрольноеЗначение" id="261">
+													<DataPath>ШагиСценария.КонтрольноеЗначение</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияКонтрольноеЗначениеКонтекстноеМеню" id="262"/>
+													<ExtendedTooltip name="ШагиСценарияКонтрольноеЗначениеРасширеннаяПодсказка" id="263"/>
+												</InputField>
+												<InputField name="ШагиСценарияВидСравнения" id="264">
+													<DataPath>ШагиСценария.ВидСравнения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияВидСравненияКонтекстноеМеню" id="265"/>
+													<ExtendedTooltip name="ШагиСценарияВидСравненияРасширеннаяПодсказка" id="266"/>
+												</InputField>
+												<InputField name="ШагиСценарияТипУзла" id="267">
+													<DataPath>ШагиСценария.ТипУзла</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияТипУзлаКонтекстноеМеню" id="268"/>
+													<ExtendedTooltip name="ШагиСценарияТипУзлаРасширеннаяПодсказка" id="269"/>
+												</InputField>
+												<InputField name="ШагиСценарияИдентификаторКоманды" id="270">
+													<DataPath>ШагиСценария.ИдентификаторКоманды</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияИдентификаторКомандыКонтекстноеМеню" id="271"/>
+													<ExtendedTooltip name="ШагиСценарияИдентификаторКомандыРасширеннаяПодсказка" id="272"/>
+												</InputField>
+												<InputField name="ШагиСценарияПараметрыХранилище" id="273">
+													<DataPath>ШагиСценария.ПараметрыХранилище</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияПараметрыХранилищеКонтекстноеМеню" id="274"/>
+													<ExtendedTooltip name="ШагиСценарияПараметрыХранилищеРасширеннаяПодсказка" id="275"/>
+												</InputField>
+												<InputField name="ШагиСценарияОграничениеПоТипу" id="276">
+													<DataPath>ШагиСценария.ОграничениеПоТипу</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияОграничениеПоТипуКонтекстноеМеню" id="277"/>
+													<ExtendedTooltip name="ШагиСценарияОграничениеПоТипуРасширеннаяПодсказка" id="278"/>
+												</InputField>
+												<InputField name="ШагиСценарияИд" id="279">
+													<DataPath>ШагиСценария.Ид</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияИдКонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="ШагиСценарияИдРасширеннаяПодсказка" id="281"/>
+												</InputField>
+												<InputField name="ШагиСценарияИдРодителя" id="282">
+													<DataPath>ШагиСценария.ИдРодителя</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияИдРодителяКонтекстноеМеню" id="283"/>
+													<ExtendedTooltip name="ШагиСценарияИдРодителяРасширеннаяПодсказка" id="284"/>
+												</InputField>
+												<InputField name="ШагиСценарияОписаниеТиповОбъекта" id="285">
+													<DataPath>ШагиСценария.ОписаниеТиповОбъекта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияОписаниеТиповОбъектаКонтекстноеМеню" id="286"/>
+													<ExtendedTooltip name="ШагиСценарияОписаниеТиповОбъектаРасширеннаяПодсказка" id="287"/>
+												</InputField>
+												<InputField name="ШагиСценарияОбъектКоманды" id="288">
+													<DataPath>ШагиСценария.ОбъектКоманды</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияОбъектКомандыКонтекстноеМеню" id="289"/>
+													<ExtendedTooltip name="ШагиСценарияОбъектКомандыРасширеннаяПодсказка" id="290"/>
+												</InputField>
+												<InputField name="ШагиСценарияТипОбъекта" id="291">
+													<DataPath>ШагиСценария.ТипОбъекта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияТипОбъектаКонтекстноеМеню" id="292"/>
+													<ExtendedTooltip name="ШагиСценарияТипОбъектаРасширеннаяПодсказка" id="293"/>
+												</InputField>
+												<InputField name="ШагиСценарияИмяПеременной" id="294">
+													<DataPath>ШагиСценария.ИмяПеременной</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияИмяПеременнойКонтекстноеМеню" id="295"/>
+													<ExtendedTooltip name="ШагиСценарияИмяПеременнойРасширеннаяПодсказка" id="296"/>
+												</InputField>
+												<InputField name="ШагиСценарияИдентификаторТеста" id="297">
+													<DataPath>ШагиСценария.ИдентификаторТеста</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ШагиСценарияИдентификаторТестаКонтекстноеМеню" id="298"/>
+													<ExtendedTooltip name="ШагиСценарияИдентификаторТестаРасширеннаяПодсказка" id="299"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаТаблицаМетодыОбъектов" id="334">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница таблица методы объектов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница таблица методы объектов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаТаблицаМетодыОбъектовРасширеннаяПодсказка" id="335"/>
+									<ChildItems>
+										<Table name="МетодыОбъектов2" id="336">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>МетодыОбъектов</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="МетодыОбъектов2КонтекстноеМеню" id="337"/>
+											<AutoCommandBar name="МетодыОбъектов2КоманднаяПанель" id="338"/>
+											<ExtendedTooltip name="МетодыОбъектов2РасширеннаяПодсказка" id="339"/>
+											<SearchStringAddition name="МетодыОбъектов2СтрокаПоиска" id="340">
+												<AdditionSource>
+													<Item>МетодыОбъектов2</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МетодыОбъектов2СтрокаПоискаКонтекстноеМеню" id="341"/>
+												<ExtendedTooltip name="МетодыОбъектов2СтрокаПоискаРасширеннаяПодсказка" id="342"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="МетодыОбъектов2СостояниеПросмотра" id="343">
+												<AdditionSource>
+													<Item>МетодыОбъектов2</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МетодыОбъектов2СостояниеПросмотраКонтекстноеМеню" id="344"/>
+												<ExtendedTooltip name="МетодыОбъектов2СостояниеПросмотраРасширеннаяПодсказка" id="345"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="МетодыОбъектов2УправлениеПоиском" id="346">
+												<AdditionSource>
+													<Item>МетодыОбъектов2</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="МетодыОбъектов2УправлениеПоискомКонтекстноеМеню" id="347"/>
+												<ExtendedTooltip name="МетодыОбъектов2УправлениеПоискомРасширеннаяПодсказка" id="348"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="МетодыОбъектов2ТипОбъекта" id="349">
+													<DataPath>МетодыОбъектов.ТипОбъекта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МетодыОбъектов2ТипОбъектаКонтекстноеМеню" id="350"/>
+													<ExtendedTooltip name="МетодыОбъектов2ТипОбъектаРасширеннаяПодсказка" id="351"/>
+												</InputField>
+												<InputField name="МетодыОбъектов2ИмяОбъекта" id="352">
+													<DataPath>МетодыОбъектов.ИмяОбъекта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МетодыОбъектов2ИмяОбъектаКонтекстноеМеню" id="353"/>
+													<ExtendedTooltip name="МетодыОбъектов2ИмяОбъектаРасширеннаяПодсказка" id="354"/>
+												</InputField>
+												<InputField name="МетодыОбъектов2ТипМетода" id="355">
+													<DataPath>МетодыОбъектов.ТипМетода</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МетодыОбъектов2ТипМетодаКонтекстноеМеню" id="356"/>
+													<ExtendedTooltip name="МетодыОбъектов2ТипМетодаРасширеннаяПодсказка" id="357"/>
+												</InputField>
+												<InputField name="МетодыОбъектов2ИмяМетода" id="358">
+													<DataPath>МетодыОбъектов.ИмяМетода</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МетодыОбъектов2ИмяМетодаКонтекстноеМеню" id="359"/>
+													<ExtendedTooltip name="МетодыОбъектов2ИмяМетодаРасширеннаяПодсказка" id="360"/>
+												</InputField>
+												<InputField name="МетодыОбъектов2ПредставлениеМетода" id="361">
+													<DataPath>МетодыОбъектов.ПредставлениеМетода</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МетодыОбъектов2ПредставлениеМетодаКонтекстноеМеню" id="362"/>
+													<ExtendedTooltip name="МетодыОбъектов2ПредставлениеМетодаРасширеннаяПодсказка" id="363"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
-						</Table>
+						</Pages>
 					</ChildItems>
 				</Page>
 			</ChildItems>
 		</Pages>
+		<Table name="МетодыОбъектов1" id="317">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>МетодыОбъектов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МетодыОбъектов1КонтекстноеМеню" id="318"/>
+			<AutoCommandBar name="МетодыОбъектов1КоманднаяПанель" id="319"/>
+			<ExtendedTooltip name="МетодыОбъектов1РасширеннаяПодсказка" id="320"/>
+			<SearchStringAddition name="МетодыОбъектов1СтрокаПоиска" id="321">
+				<AdditionSource>
+					<Item>МетодыОбъектов1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыОбъектов1СтрокаПоискаКонтекстноеМеню" id="322"/>
+				<ExtendedTooltip name="МетодыОбъектов1СтрокаПоискаРасширеннаяПодсказка" id="323"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МетодыОбъектов1СостояниеПросмотра" id="324">
+				<AdditionSource>
+					<Item>МетодыОбъектов1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыОбъектов1СостояниеПросмотраКонтекстноеМеню" id="325"/>
+				<ExtendedTooltip name="МетодыОбъектов1СостояниеПросмотраРасширеннаяПодсказка" id="326"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МетодыОбъектов1УправлениеПоиском" id="327">
+				<AdditionSource>
+					<Item>МетодыОбъектов1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МетодыОбъектов1УправлениеПоискомКонтекстноеМеню" id="328"/>
+				<ExtendedTooltip name="МетодыОбъектов1УправлениеПоискомРасширеннаяПодсказка" id="329"/>
+			</SearchControlAddition>
+		</Table>
 		<UsualGroup name="Группа2" id="243">
 			<Group>AlwaysHorizontal</Group>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="244"/>
 			<ChildItems>
+				<Table name="МетодыОбъектов" id="304">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>МетодыОбъектов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="МетодыОбъектовКонтекстноеМеню" id="305"/>
+					<AutoCommandBar name="МетодыОбъектовКоманднаяПанель" id="306"/>
+					<ExtendedTooltip name="МетодыОбъектовРасширеннаяПодсказка" id="307"/>
+					<SearchStringAddition name="МетодыОбъектовСтрокаПоиска" id="308">
+						<AdditionSource>
+							<Item>МетодыОбъектов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МетодыОбъектовСтрокаПоискаКонтекстноеМеню" id="309"/>
+						<ExtendedTooltip name="МетодыОбъектовСтрокаПоискаРасширеннаяПодсказка" id="310"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="МетодыОбъектовСостояниеПросмотра" id="311">
+						<AdditionSource>
+							<Item>МетодыОбъектов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МетодыОбъектовСостояниеПросмотраКонтекстноеМеню" id="312"/>
+						<ExtendedTooltip name="МетодыОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="313"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="МетодыОбъектовУправлениеПоиском" id="314">
+						<AdditionSource>
+							<Item>МетодыОбъектов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="МетодыОбъектовУправлениеПоискомКонтекстноеМеню" id="315"/>
+						<ExtendedTooltip name="МетодыОбъектовУправлениеПоискомРасширеннаяПодсказка" id="316"/>
+					</SearchControlAddition>
+				</Table>
 				<InputField name="ТекущийГлавныйУзел" id="122">
 					<DataPath>ТекущийГлавныйУзел</DataPath>
 					<ContextMenu name="ТекущийГлавныйУзелКонтекстноеМеню" id="123"/>
@@ -1291,6 +1461,94 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="МетодыОбъектов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методы объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТипОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяОбъекта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипМетода" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип метода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяМетода" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя метода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеМетода" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление метода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>

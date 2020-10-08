@@ -66,7 +66,9 @@
 			<Form>ФормаОстаткиОборотыРегистрыНакопления</Form>
 			<Form>ФормаОстаткиОборотыРегистрыБухнгалтерии</Form>
 			<Form>ФормаНезависимыеРегистрыСведений</Form>
+			<Form>ФормаУстановкаПараметровМетодов</Form>
 			<Template>ШаблонТекстаМодуля</Template>
+			<Template>ПроцедурыФункцииОбъектов</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
