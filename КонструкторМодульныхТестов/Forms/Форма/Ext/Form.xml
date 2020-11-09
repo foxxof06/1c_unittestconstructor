@@ -95,6 +95,7 @@
 								<ExtendedTooltip name="ДеревоЩагиСценарияУправлениеПоискомРасширеннаяПодсказка" id="87"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="Selection">ДеревоЩагиСценарияВыбор</Event>
 								<Event name="OnActivateRow">ДеревоЩагиСценарияПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
@@ -106,6 +107,7 @@
 									<ContextMenu name="ДеревоЩагиСценарияКомандаКонтекстноеМеню" id="133"/>
 									<ExtendedTooltip name="ДеревоЩагиСценарияКомандаРасширеннаяПодсказка" id="134"/>
 									<Events>
+										<Event name="OnChange">ДеревоЩагиСценарияКомандаПриИзменении</Event>
 										<Event name="StartChoice">ДеревоЩагиСценарияКомандаНачалоВыбора</Event>
 										<Event name="ChoiceProcessing">ДеревоЩагиСценарияКомандаОбработкаВыбора</Event>
 									</Events>
@@ -113,6 +115,8 @@
 								<InputField name="ДеревоЩагиСценарияТипОбъекта" id="129">
 									<DataPath>ДеревоЩагиСценария.ТипОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ChooseType>false</ChooseType>
 									<ContextMenu name="ДеревоЩагиСценарияТипОбъектаКонтекстноеМеню" id="130"/>
 									<ExtendedTooltip name="ДеревоЩагиСценарияТипОбъектаРасширеннаяПодсказка" id="131"/>
 									<Events>
@@ -1231,6 +1235,22 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КнопкаВызоваПараметровКоманды" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка вызова параметров команды</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>
