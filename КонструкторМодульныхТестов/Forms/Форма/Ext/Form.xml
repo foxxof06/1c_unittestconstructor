@@ -43,10 +43,23 @@
 			<ContextMenu name="НаборТестовИмяКонтекстноеМеню" id="400"/>
 			<ExtendedTooltip name="НаборТестовИмяРасширеннаяПодсказка" id="401"/>
 		</InputField>
-		<InputField name="НаборТестовИмяФайла" id="402">
-			<DataPath>НаборТестовИмяФайла</DataPath>
-			<ContextMenu name="НаборТестовИмяФайлаКонтекстноеМеню" id="403"/>
-			<ExtendedTooltip name="НаборТестовИмяФайлаРасширеннаяПодсказка" id="404"/>
+		<InputField name="Тест" id="390">
+			<DataPath>Тест</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активный тест</v8:content>
+				</v8:item>
+			</Title>
+			<ChoiceButton>true</ChoiceButton>
+			<OpenButton>false</OpenButton>
+			<CreateButton>true</CreateButton>
+			<ContextMenu name="ТестКонтекстноеМеню" id="391"/>
+			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="392"/>
+			<Events>
+				<Event name="OnChange">ТестПриИзменении</Event>
+				<Event name="StartChoice">ТестНачалоВыбора</Event>
+			</Events>
 		</InputField>
 		<Pages name="Группа1" id="62">
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="63"/>
@@ -69,20 +82,6 @@
 						<UsualGroup name="Группа8" id="393">
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="394"/>
-							<ChildItems>
-								<InputField name="Тест" id="390">
-									<DataPath>Тест</DataPath>
-									<ChoiceButton>true</ChoiceButton>
-									<OpenButton>false</OpenButton>
-									<CreateButton>true</CreateButton>
-									<ContextMenu name="ТестКонтекстноеМеню" id="391"/>
-									<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="392"/>
-									<Events>
-										<Event name="OnChange">ТестПриИзменении</Event>
-										<Event name="StartChoice">ТестНачалоВыбора</Event>
-									</Events>
-								</InputField>
-							</ChildItems>
 						</UsualGroup>
 						<Table name="ДеревоЩагиСценария" id="75">
 							<Representation>Tree</Representation>
