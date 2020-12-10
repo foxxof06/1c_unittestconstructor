@@ -69,7 +69,8 @@
 			<Form>ФормаУстановкаПараметровМетодов</Form>
 			<Form>ФормаРеквизитовОбъектов</Form>
 			<Template>ШаблонТекстаМодуля</Template>
-			<Template>ПроцедурыФункцииОбъектов</Template>
+			<Template>ПИФ3_ПроцедурыФункцииОбъектов</Template>
+			<Template>ПИФ3_ИсключаемыеИзВыгрузкиРеквизитыОбъектов</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

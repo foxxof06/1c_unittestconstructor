@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
-	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаПоказатьТекстМодуля" id="26">
@@ -336,6 +335,49 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДанныеВыгрузкиОбъектовИмяПеременнойКонтекстноеМеню" id="206"/>
 									<ExtendedTooltip name="ДанныеВыгрузкиОбъектовИмяПеременнойРасширеннаяПодсказка" id="207"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ИсключаемыеИзВыгрузкиРеквизитыОбъектов" id="402">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ИсключаемыеИзВыгрузкиРеквизитыОбъектов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовКонтекстноеМеню" id="403"/>
+							<AutoCommandBar name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовКоманднаяПанель" id="404"/>
+							<ExtendedTooltip name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовРасширеннаяПодсказка" id="405"/>
+							<SearchStringAddition name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСтрокаПоиска" id="406">
+								<AdditionSource>
+									<Item>ИсключаемыеИзВыгрузкиРеквизитыОбъектов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСтрокаПоискаКонтекстноеМеню" id="407"/>
+								<ExtendedTooltip name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСтрокаПоискаРасширеннаяПодсказка" id="408"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСостояниеПросмотра" id="409">
+								<AdditionSource>
+									<Item>ИсключаемыеИзВыгрузкиРеквизитыОбъектов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСостояниеПросмотраКонтекстноеМеню" id="410"/>
+								<ExtendedTooltip name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="411"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовУправлениеПоиском" id="412">
+								<AdditionSource>
+									<Item>ИсключаемыеИзВыгрузкиРеквизитыОбъектов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовУправлениеПоискомКонтекстноеМеню" id="413"/>
+								<ExtendedTooltip name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовУправлениеПоискомРасширеннаяПодсказка" id="414"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовИмяРеквизита" id="415">
+									<DataPath>ИсключаемыеИзВыгрузкиРеквизитыОбъектов.ИмяРеквизита</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовИмяРеквизитаКонтекстноеМеню" id="416"/>
+									<ExtendedTooltip name="ИсключаемыеИзВыгрузкиРеквизитыОбъектовИмяРеквизитаРасширеннаяПодсказка" id="417"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -1872,6 +1914,34 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ИсключаемыеИзВыгрузкиРеквизитыОбъектов" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключаемые из выгрузки реквизиты объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРеквизита" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
