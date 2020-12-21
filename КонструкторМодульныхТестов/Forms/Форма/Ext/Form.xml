@@ -7,17 +7,6 @@
 				<CommandName>Form.Command.ПоказатьТекстМодуля</CommandName>
 				<ExtendedTooltip name="ФормаПоказатьТекстМодуляРасширеннаяПодсказка" id="27"/>
 			</Button>
-			<Button name="Сохранить" id="125">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПреобразоватьВТаблицу</CommandName>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Сохранить</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="126"/>
-			</Button>
 			<Button name="ФормаСохранитьНаборТестов" id="395">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СохранитьНаборТестов</CommandName>
@@ -50,19 +39,115 @@
 					<v8:content>Активный тест</v8:content>
 				</v8:item>
 			</Title>
-			<ChoiceButton>true</ChoiceButton>
 			<OpenButton>false</OpenButton>
-			<CreateButton>true</CreateButton>
+			<ListChoiceMode>true</ListChoiceMode>
 			<ContextMenu name="ТестКонтекстноеМеню" id="391"/>
 			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="392"/>
 			<Events>
-				<Event name="OnChange">ТестПриИзменении</Event>
 				<Event name="StartChoice">ТестНачалоВыбора</Event>
+				<Event name="ChoiceProcessing">ТестОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КаталогВыгрузки" id="208">
+			<DataPath>Объект.КаталогВыгрузки</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогВыгрузкиКонтекстноеМеню" id="209"/>
+			<ExtendedTooltip name="КаталогВыгрузкиРасширеннаяПодсказка" id="210"/>
+			<Events>
+				<Event name="StartChoice">КаталогВыгрузкиНачалоВыбора</Event>
 			</Events>
 		</InputField>
 		<Pages name="Группа1" id="62">
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="63"/>
 			<ChildItems>
+				<Page name="ГруппаТесты" id="388">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тесты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тесты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТестыРасширеннаяПодсказка" id="389"/>
+					<ChildItems>
+						<Table name="Тесты" id="215">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Тесты</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТестыКонтекстноеМеню" id="216">
+								<ChildItems>
+									<Button name="ТестыКонтекстноеМенюЗагрузитьТест" id="302">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьТест</CommandName>
+										<ExtendedTooltip name="ТестыКонтекстноеМенюЗагрузитьТестРасширеннаяПодсказка" id="303"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТестыКоманднаяПанель" id="217">
+								<ChildItems>
+									<Button name="ТестыСкопироватьТест" id="418">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СкопироватьТест</CommandName>
+										<ExtendedTooltip name="ТестыСкопироватьТестРасширеннаяПодсказка" id="419"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТестыРасширеннаяПодсказка" id="218"/>
+							<SearchStringAddition name="ТестыСтрокаПоиска" id="219">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыСтрокаПоискаКонтекстноеМеню" id="220"/>
+								<ExtendedTooltip name="ТестыСтрокаПоискаРасширеннаяПодсказка" id="221"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТестыСостояниеПросмотра" id="222">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыСостояниеПросмотраКонтекстноеМеню" id="223"/>
+								<ExtendedTooltip name="ТестыСостояниеПросмотраРасширеннаяПодсказка" id="224"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТестыУправлениеПоиском" id="225">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыУправлениеПоискомКонтекстноеМеню" id="226"/>
+								<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="227"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТестыИмяТеста" id="228">
+									<DataPath>Тесты.ИмяТеста</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыИмяТестаКонтекстноеМеню" id="229"/>
+									<ExtendedTooltip name="ТестыИмяТестаРасширеннаяПодсказка" id="230"/>
+								</InputField>
+								<InputField name="ТестыОписание" id="234">
+									<DataPath>Тесты.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыОписаниеКонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="ТестыОписаниеРасширеннаяПодсказка" id="236"/>
+								</InputField>
+								<InputField name="ТестыИдентификатор" id="231">
+									<DataPath>Тесты.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыИдентификаторКонтекстноеМеню" id="232"/>
+									<ExtendedTooltip name="ТестыИдентификаторРасширеннаяПодсказка" id="233"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 				<Page name="ГруппаДанные" id="64">
 					<Title>
 						<v8:item>
@@ -256,15 +341,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаДанныеКВыгрузкеРасширеннаяПодсказка" id="136"/>
 					<ChildItems>
-						<InputField name="КаталогВыгрузки" id="208">
-							<DataPath>Объект.КаталогВыгрузки</DataPath>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="КаталогВыгрузкиКонтекстноеМеню" id="209"/>
-							<ExtendedTooltip name="КаталогВыгрузкиРасширеннаяПодсказка" id="210"/>
-							<Events>
-								<Event name="StartChoice">КаталогВыгрузкиНачалоВыбора</Event>
-							</Events>
-						</InputField>
 						<Table name="ДанныеВыгрузкиОбъектов" id="178">
 							<Representation>List</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -695,86 +771,6 @@
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ТаблицаИспользованныхСсылочныхОбъектовИмяПеременнойКонтекстноеМеню" id="381"/>
 													<ExtendedTooltip name="ТаблицаИспользованныхСсылочныхОбъектовИмяПеременнойРасширеннаяПодсказка" id="382"/>
-												</InputField>
-											</ChildItems>
-										</Table>
-									</ChildItems>
-								</Page>
-								<Page name="ГруппаТесты" id="388">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа тесты</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа тесты</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаТестыРасширеннаяПодсказка" id="389"/>
-									<ChildItems>
-										<Table name="Тесты" id="215">
-											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
-											<DataPath>Тесты</DataPath>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ТестыКонтекстноеМеню" id="216">
-												<ChildItems>
-													<Button name="ТестыКонтекстноеМенюЗагрузитьТест" id="302">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗагрузитьТест</CommandName>
-														<ExtendedTooltip name="ТестыКонтекстноеМенюЗагрузитьТестРасширеннаяПодсказка" id="303"/>
-													</Button>
-												</ChildItems>
-											</ContextMenu>
-											<AutoCommandBar name="ТестыКоманднаяПанель" id="217"/>
-											<ExtendedTooltip name="ТестыРасширеннаяПодсказка" id="218"/>
-											<SearchStringAddition name="ТестыСтрокаПоиска" id="219">
-												<AdditionSource>
-													<Item>Тесты</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТестыСтрокаПоискаКонтекстноеМеню" id="220"/>
-												<ExtendedTooltip name="ТестыСтрокаПоискаРасширеннаяПодсказка" id="221"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ТестыСостояниеПросмотра" id="222">
-												<AdditionSource>
-													<Item>Тесты</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТестыСостояниеПросмотраКонтекстноеМеню" id="223"/>
-												<ExtendedTooltip name="ТестыСостояниеПросмотраРасширеннаяПодсказка" id="224"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ТестыУправлениеПоиском" id="225">
-												<AdditionSource>
-													<Item>Тесты</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ТестыУправлениеПоискомКонтекстноеМеню" id="226"/>
-												<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="227"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ТестыИмяТеста" id="228">
-													<DataPath>Тесты.ИмяТеста</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ТестыИмяТестаКонтекстноеМеню" id="229"/>
-													<ExtendedTooltip name="ТестыИмяТестаРасширеннаяПодсказка" id="230"/>
-												</InputField>
-												<InputField name="ТестыИдентификатор" id="231">
-													<DataPath>Тесты.Идентификатор</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ТестыИдентификаторКонтекстноеМеню" id="232"/>
-													<ExtendedTooltip name="ТестыИдентификаторРасширеннаяПодсказка" id="233"/>
-												</InputField>
-												<InputField name="ТестыОписание" id="234">
-													<DataPath>Тесты.Описание</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ТестыОписаниеКонтекстноеМеню" id="235"/>
-													<ExtendedTooltip name="ТестыОписаниеРасширеннаяПодсказка" id="236"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -1990,21 +1986,6 @@
 			</ToolTip>
 			<Action>ДобавитьЗависимыйУзел</Action>
 		</Command>
-		<Command name="ПреобразоватьВТаблицу" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Преобразовать в таблицу</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Преобразовать в таблицу</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ПреобразоватьВТаблицу</Action>
-		</Command>
 		<Command name="ПреобразоватьВДерево" id="5">
 			<Title>
 				<v8:item>
@@ -2109,6 +2090,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьНаборТестов</Action>
+		</Command>
+		<Command name="СкопироватьТест" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкопироватьТест</Action>
 		</Command>
 	</Commands>
 </Form>
