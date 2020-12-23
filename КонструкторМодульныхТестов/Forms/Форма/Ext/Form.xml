@@ -125,6 +125,12 @@
 								<ContextMenu name="ТестыУправлениеПоискомКонтекстноеМеню" id="226"/>
 								<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="227"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ТестыПередНачаломДобавления</Event>
+								<Event name="BeforeEditEnd">ТестыПередОкончаниемРедактирования</Event>
+								<Event name="BeforeRowChange">ТестыПередНачаломИзменения</Event>
+								<Event name="OnStartEdit">ТестыПриНачалеРедактирования</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ТестыИмяТеста" id="228">
 									<DataPath>Тесты.ИмяТеста</DataPath>
@@ -485,6 +491,28 @@
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ТекстМодуляКонтекстноеМеню" id="69"/>
 							<ExtendedTooltip name="ТекстМодуляРасширеннаяПодсказка" id="70"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСценарий" id="420">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сценарий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сценарий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСценарийРасширеннаяПодсказка" id="421"/>
+					<ChildItems>
+						<TextDocumentField name="ТекстСценария" id="422">
+							<DataPath>ТекстСценария</DataPath>
+							<ContextMenu name="ТекстСценарияКонтекстноеМеню" id="423"/>
+							<ExtendedTooltip name="ТекстСценарияРасширеннаяПодсказка" id="424"/>
 						</TextDocumentField>
 					</ChildItems>
 				</Page>
@@ -1938,6 +1966,17 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ТекстСценария" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сценария</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
