@@ -126,9 +126,7 @@
 								<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="227"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="BeforeAddRow">ТестыПередНачаломДобавления</Event>
 								<Event name="BeforeEditEnd">ТестыПередОкончаниемРедактирования</Event>
-								<Event name="BeforeRowChange">ТестыПередНачаломИзменения</Event>
 								<Event name="OnStartEdit">ТестыПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
@@ -143,6 +141,18 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТестыОписаниеКонтекстноеМеню" id="235"/>
 									<ExtendedTooltip name="ТестыОписаниеРасширеннаяПодсказка" id="236"/>
+								</InputField>
+								<InputField name="ТестыИмяМакетаИсходныхДанных" id="425">
+									<DataPath>Тесты.ИмяМакетаИсходныхДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыИмяМакетаИсходныхДанныхКонтекстноеМеню" id="426"/>
+									<ExtendedTooltip name="ТестыИмяМакетаИсходныхДанныхРасширеннаяПодсказка" id="427"/>
+								</InputField>
+								<InputField name="ТестыИмяМакетаСценария" id="428">
+									<DataPath>Тесты.ИмяМакетаСценария</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыИмяМакетаСценарияКонтекстноеМеню" id="429"/>
+									<ExtendedTooltip name="ТестыИмяМакетаСценарияРасширеннаяПодсказка" id="430"/>
 								</InputField>
 								<InputField name="ТестыИдентификатор" id="231">
 									<DataPath>Тесты.Идентификатор</DataPath>
@@ -1621,6 +1631,36 @@
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
 							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяМакетаИсходныхДанных" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета исходных данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>300</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяМакетаСценария" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета сценария</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>300</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
