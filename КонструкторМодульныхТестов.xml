@@ -72,6 +72,7 @@
 			<Template>ШаблонТекстаМодуля</Template>
 			<Template>ПИФ3_ПроцедурыФункцииОбъектов</Template>
 			<Template>ПИФ3_ИсключаемыеИзВыгрузкиРеквизитыОбъектов</Template>
+			<Template>ПИФ3_ДокументыВыгружаемыеСДвижениями</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

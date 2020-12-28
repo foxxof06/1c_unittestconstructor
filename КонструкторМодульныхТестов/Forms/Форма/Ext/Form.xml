@@ -416,6 +416,13 @@
 									<ContextMenu name="ДанныеВыгрузкиОбъектовСсылкаКонтекстноеМеню" id="192"/>
 									<ExtendedTooltip name="ДанныеВыгрузкиОбъектовСсылкаРасширеннаяПодсказка" id="193"/>
 								</InputField>
+								<CheckBoxField name="ДанныеВыгрузкиОбъектовВыгружатьСДокументомЕгоДвижения" id="431">
+									<DataPath>ДанныеВыгрузкиОбъектов.ВыгружатьСДокументомЕгоДвижения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДанныеВыгрузкиОбъектовВыгружатьСДокументомЕгоДвиженияКонтекстноеМеню" id="432"/>
+									<ExtendedTooltip name="ДанныеВыгрузкиОбъектовВыгружатьСДокументомЕгоДвиженияРасширеннаяПодсказка" id="433"/>
+								</CheckBoxField>
 								<InputField name="ДанныеВыгрузкиОбъектовМетаданное" id="194">
 									<DataPath>ДанныеВыгрузкиОбъектов.Метаданное</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -1572,6 +1579,17 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыгружатьСДокументомЕгоДвижения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружать с документом его движения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
