@@ -44,7 +44,6 @@
 			<ContextMenu name="ТестКонтекстноеМеню" id="391"/>
 			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="392"/>
 			<Events>
-				<Event name="StartChoice">ТестНачалоВыбора</Event>
 				<Event name="ChoiceProcessing">ТестОбработкаВыбора</Event>
 			</Events>
 		</InputField>
@@ -126,7 +125,7 @@
 								<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="227"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="BeforeEditEnd">ТестыПередОкончаниемРедактирования</Event>
+								<Event name="OnEditEnd">ТестыПриОкончанииРедактирования</Event>
 								<Event name="OnStartEdit">ТестыПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
@@ -186,6 +185,7 @@
 						<Table name="ДеревоЩагиСценария" id="75">
 							<Representation>Tree</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоЩагиСценария</DataPath>
@@ -235,6 +235,7 @@
 								<Event name="Selection">ДеревоЩагиСценарияВыбор</Event>
 								<Event name="BeforeAddRow">ДеревоЩагиСценарияПередНачаломДобавления</Event>
 								<Event name="OnActivateRow">ДеревоЩагиСценарияПриАктивизацииСтроки</Event>
+								<Event name="OnStartEdit">ДеревоЩагиСценарияПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
 								<InputField name="ДеревоЩагиСценарияКоманда" id="132">
@@ -551,14 +552,20 @@
 						<Pages name="Группа3" id="330">
 							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="331"/>
 							<ChildItems>
-								<Page name="Группа6" id="332">
+								<Page name="ГруппаШагиСценария" id="332">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Шаги сценария</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="333"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шаги сценария</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаШагиСценарияРасширеннаяПодсказка" id="333"/>
 									<ChildItems>
 										<Table name="ШагиСценария" id="245">
 											<Representation>List</Representation>
@@ -767,8 +774,20 @@
 										</Table>
 									</ChildItems>
 								</Page>
-								<Page name="Группа7" id="386">
-									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="387"/>
+								<Page name="ГруппаСсылочныеОбъекты" id="386">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылочные объекты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ссылочные объекты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСсылочныеОбъектыРасширеннаяПодсказка" id="387"/>
 									<ChildItems>
 										<Table name="ТаблицаИспользованныхСсылочныхОбъектов" id="364">
 											<Representation>List</Representation>
@@ -819,6 +838,32 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаНастройки" id="434">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="435"/>
+									<ChildItems>
+										<CheckBoxField name="РежимОтладки" id="436">
+											<DataPath>Объект.РежимОтладки</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="РежимОтладкиКонтекстноеМеню" id="437"/>
+											<ExtendedTooltip name="РежимОтладкиРасширеннаяПодсказка" id="438"/>
+											<Events>
+												<Event name="OnChange">РежимОтладкиПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -922,6 +967,7 @@
 			<MainAttribute>true</MainAttribute>
 			<Save>
 				<Field>Объект.КаталогВыгрузки</Field>
+				<Field>Объект.РежимОтладки</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ШагиСценария" id="2">
@@ -935,9 +981,6 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<SavedData>true</SavedData>
-			<Save>
-				<Field>ШагиСценария</Field>
-			</Save>
 			<Columns>
 				<Column name="Команда" id="2">
 					<Title>
@@ -1604,9 +1647,6 @@
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
-			<Save>
-				<Field>Тесты</Field>
-			</Save>
 			<Columns>
 				<Column name="ИмяТеста" id="1">
 					<Title>
